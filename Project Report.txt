@@ -4,3 +4,4 @@ Installation Procedure:
 
 Instructions after installing the node js;
 npm init
+npm install
