@@ -5,3 +5,10 @@ Installation Procedure:
 Instructions after installing the node js;
 npm init
 npm install
+
+packages dependencies list :
+bootstrap npm install bootstrap
+mysql npm install mysql
+express - command npm install express --save
+fontawesome
+body-parser npm install body-parser
