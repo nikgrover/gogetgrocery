@@ -1,0 +1,2 @@
+Ignore folder named node_modules as they wil be installed from the key npm install
+node_modules/
