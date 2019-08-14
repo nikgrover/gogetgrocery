@@ -1,0 +1,6 @@
+Installation Procedure:
+1. Install node js
+2 Open node js command prompt > navigate to the project workspace then follow the instrucitons below
+
+Instructions after installing the node js;
+npm init
