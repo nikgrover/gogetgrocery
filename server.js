@@ -76,7 +76,6 @@ app.post('/postCustomer', (req, res) => {
 //http://localhost:3000/checkLogin?uname=sanjaysai999&psw=123456789
 app.post('/checkLogin', function(req, res) {
 
-    //get musician.matt
     console.log(req.body.uname);
     var userName = req.body.uname;
     console.log(req.body.psw);
@@ -96,13 +95,6 @@ app.post('/checkLogin', function(req, res) {
         res.end();
         // res.redirect("/about.html");
     })
-
-    // connection.end();
-
-    // app.post('/submit', (req, res) => {
-
-    // });
-    //res.end();
 });
 
 app.post('/InsertingIntoListofItems', function(req, res) {
@@ -124,4 +116,18 @@ app.post('/InsertingIntoListofItems', function(req, res) {
         res.end();
     })
     res.end();
+});
+
+app.get('/getMyItems', (req, res) => {
+    // var user1 = { name: "sanjay", age: '25' };
+    // var user2 = { name: "jeevan", age: '22' };
+    // var user3 = { name: "jeevanp", age: '22' };
+
+    // res.json([user1, user2]);
+    const getUserQuery = "SELECT * FROM CUSTOMER";
+
+    getConnection().query(getUserQuery, (err, rows, fields) => {
+            res.json(rows);
+        })
+        // res.send("nodemon auto updates the server again now");
 });
