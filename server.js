@@ -103,10 +103,12 @@ app.post('/checkLogin', function(req, res) {
             return
         }
         // sending all the selected rows as json to the front end as post response
-        res.status(200).json(rows);
+        //res.status(200).json(rows);
         // console.log(rows[0]);
         // res.redirect('/about.html');
-        res.end();
+
+        res.redirect('/first%20page.html');
+        //res.end();
         // res.redirect("/about.html");
     })
 });
