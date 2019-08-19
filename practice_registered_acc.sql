@@ -16,28 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `login`
+-- Table structure for table `registered_acc`
 --
 
-DROP TABLE IF EXISTS `login`;
+DROP TABLE IF EXISTS `registered_acc`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `login` (
+CREATE TABLE `registered_acc` (
+  `name` char(20) DEFAULT NULL,
+  `phone_no` varchar(10) DEFAULT NULL,
+  `address` varchar(225) DEFAULT NULL,
+  `postal_code` varchar(6) DEFAULT NULL,
   `email_id` varchar(225) DEFAULT NULL,
-  `password` varchar(30) DEFAULT NULL,
+  UNIQUE KEY `phone_no` (`phone_no`),
   UNIQUE KEY `email_id` (`email_id`),
-  CONSTRAINT `login_ibfk_1` FOREIGN KEY (`email_id`) REFERENCES `registeration` (`email_id`)
+  CONSTRAINT `registered_acc_ibfk_1` FOREIGN KEY (`email_id`) REFERENCES `login` (`email_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `login`
+-- Dumping data for table `registered_acc`
 --
 
-LOCK TABLES `login` WRITE;
-/*!40000 ALTER TABLE `login` DISABLE KEYS */;
-INSERT INTO `login` VALUES ('CEGEP1@gmail.com','cegep1'),('CEGEP@gmail.com','cegep1'),('CEGEP2@gmail.com','cegep1'),('CEGEP3@gmail.com','cegep1'),('CEGEP4@gmail.com','cegep1'),('CEGEP5@gmail.com','cegep1');
-/*!40000 ALTER TABLE `login` ENABLE KEYS */;
+LOCK TABLES `registered_acc` WRITE;
+/*!40000 ALTER TABLE `registered_acc` DISABLE KEYS */;
+INSERT INTO `registered_acc` VALUES ('nikhil grover','4381192931','8769 av. quebec ,montreal','H3N2C1','CEGEP@gmail.com'),('nik grover','4281192331','8712 av. lasalle ,montreal','H3F2C0','CEGEP1@gmail.com'),('sanjay goud','5141192331','9712 av. sherbooke ,montreal','H1F2N0','CEGEP2@gmail.com'),('sajan goud','5141192332','11712 av. sherbooke ,montreal','H1F2N1','CEGEP3@gmail.com'),('vinod saini','5142192332','10712 av. sherbooke ,montreal','H1F1N1','CEGEP4@gmail.com'),('Sahil saini','5142192222','712 av. sherbooke ,montreal','H1F171','CEGEP5@gmail.com');
+/*!40000 ALTER TABLE `registered_acc` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -49,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-08-18 14:30:38
+-- Dump completed on 2019-08-18 14:37:10
