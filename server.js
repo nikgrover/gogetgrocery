@@ -157,7 +157,7 @@ app.post('/insertingIntoListofItems', function(req, res) {
         res.status(201).json(rows);
         res.end();
     });
-    // //res.end();
+    //res.end();
 });
 
 //to Get all items for the customer.
