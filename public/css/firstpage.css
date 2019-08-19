@@ -1,0 +1,140 @@
+
+body {
+    background-color: #282828;
+        font-family: arial;
+    margin: 10;
+}
+.container {
+    width: 77%;
+    float: right;
+    margin-right: 30px;
+        background-color: #f0f0f0;
+    height: 93%;
+	border-radius: 10px;
+	    padding-bottom: 50px;
+}
+.myitems{
+	text-align:left;
+	background-color:white;
+	margin: 10px;
+	
+	
+}
+.container1 {
+    width: 18%;
+    border-right: white 2px solid;
+    height: 625px;
+    float: left;
+}
+.image{
+	border-bottom: white 4px solid;
+}
+	main{
+		margin-left: 0!important;
+		height:auto;
+	}
+button {
+   background-color: #fdca2e;
+    color: black;
+    padding: 9px 5px;
+    margin:  8px 0 auto;
+    border: none;
+    cursor: pointer;
+    width: 123px;
+    font-family: arial;
+    font-weight: 600;
+    height: 36px;
+    border-radius: 3px
+	
+}
+label{
+color:gray;
+font-family:arial;
+
+    margin-left: 25%;
+ }
+ .rows
+ {
+	 border-bottom:#f0f0f0 2px solid;
+	     margin: 25px;
+	 
+ }
+ input{
+ width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	border-radius:3px;
+}
+p{
+	
+}
+//**nav**//
+.nav{
+	top: 0;
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+  
+}
+
+.nav ul li {
+  float: right;
+}
+.nav ul li a {
+	float:right;
+  display: block;
+  color: #fdca2e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:arial;
+  font-size:20px;
+}
+.container a{
+float:left;
+  display: block;
+  color: gray;
+  
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:arial;
+  font-size:15px;
+}
+.menu li a{
+	float:none;
+	    float: none;
+    display: block;
+    color: #fdca2e;
+    /* text-align: center; */
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    font-family: arial;
+    /* font-size: 20px; */
+}
+}
+}
+li a:hover:not(.active) {
+  background-color: #dddddd14
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+	border-top: gray 2px solid;
+}
+.last
+{    border-top: #3c3d3f 2px solid;
+    height: 29px;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+	margin-left:10%;
+}
